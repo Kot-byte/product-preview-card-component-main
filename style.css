@@ -1,0 +1,361 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3EAE3;
+    height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    width: 650px;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto {
+
+
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    margin-top: 40px;
+}
+
+.name_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #616169;
+    margin-bottom: 28px;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+
+    color: #20272D;
+    width: 250px;
+    margin-bottom: 34px;
+}
+
+.desc {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 171.9%;
+    text-align: left;
+    color: #616169;
+    margin-bottom: 37px;
+
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+
+}
+
+.price_now {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 50%;
+    color: #3E7F67;
+    margin-right: 22px;
+}
+
+.sale {
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 171.9%;
+    color: #616169;
+}
+
+.button_buy {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 171.9%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    width: 235px;
+    height: 48px;
+    background: #1B3F31;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 32px;
+
+
+}
+
+.addcart {
+    padding-right: 11px;
+}
+
+/*MEDIA----------------------------------*/
+
+@media screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        height: 500px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        grid-gap: 0px;
+
+    }
+
+    .foto {
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        width: 320px;
+        height: 200px;
+        margin-bottom: 0px;
+    }
+
+
+    .title {
+        font-size: 29px;
+        margin-bottom: 10px;
+
+    }
+
+    .name_title {
+
+        font-size: 12px;
+
+
+        margin-bottom: 10px;
+    }
+
+    .desc {
+
+        font-size: 13px;
+
+        margin-bottom: 10px;
+    }
+
+    .text {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .price {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+
+    .price_now {
+
+        font-size: 28px;
+
+        margin-right: 22px;
+    }
+
+    .sale {
+
+
+        font-size: 12px;
+
+    }
+
+    .button_buy {
+
+
+        width: 100%;
+        height: 48px;
+        margin-right: 15px;
+
+
+    }
+}
